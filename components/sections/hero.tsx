@@ -17,30 +17,30 @@ export function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
-  useEffect(() => {
-    const hero = heroRef.current
-    if (!hero) return
+  // useEffect(() => {
+  //   const hero = heroRef.current
+  //   if (!hero) return
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = hero.getBoundingClientRect()
-      const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20
-      const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20
+  //   // const handleMouseMove = (e: MouseEvent) => {
+  //   //   const rect = hero.getBoundingClientRect()
+  //   //   const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20
+  //   //   const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20
 
-      const cards = hero.querySelectorAll(".floating-card")
-      cards.forEach((card, index) => {
-        const element = card as HTMLElement
-        const factor = (index + 1) * 0.5
-        element.style.transform = `translate(${x * factor}px, ${y * factor}px)`
-      })
-    }
+  //   //   const cards = hero.querySelectorAll(".floating-card")
+  //   //   cards.forEach((card, index) => {
+  //   //     const element = card as HTMLElement
+  //   //     const factor = (index + 1) * 0.5
+  //   //     element.style.transform = `translate(${x * factor}px, ${y * factor}px)`
+  //   //   })
+  //   // }
 
-    hero.addEventListener("mousemove", handleMouseMove)
-    return () => hero.removeEventListener("mousemove", handleMouseMove)
-  }, [])
+  //   hero.addEventListener("mousemove", handleMouseMove)
+  //   return () => hero.removeEventListener("mousemove", handleMouseMove)
+  // }, [])
 
   return (
     <section
-      ref={heroRef}
+      // ref={heroRef}
       className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden"
     >
       {/* Gradient Orbs */}
@@ -130,7 +130,7 @@ export function HeroSection() {
             {/* Workflow nodes - positioned around the hub */}
             {/* Incoming Call Node */}
             <div 
-              className={`floating-card absolute top-8 left-8 transition-all duration-500 ${activeWorkflow === 0 ? 'scale-110 shadow-xl shadow-primary/20' : 'scale-100'}`}
+              className={`floating-card absolute top-8 left-8 transition-all duration-500 ${activeWorkflow === 0 ? 'scale-110 shadow-xl shadow-primary/20 rounded-full' : 'scale-100'}`}
             >
               <div className="w-44 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
@@ -162,7 +162,7 @@ export function HeroSection() {
 
             {/* Chat Message Node */}
             <div 
-              className={`floating-card absolute top-8 right-4 transition-all duration-500 ${activeWorkflow === 1 ? 'scale-110 shadow-xl shadow-primary/20' : 'scale-100'}`}
+              className={`floating-card absolute top-8 right-4 transition-all duration-500 ${activeWorkflow === 1 ? 'scale-110 shadow-xl shadow-primary/20 rounded-full' : 'scale-100'}`}
             >
               <div className="w-44 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
@@ -185,7 +185,7 @@ export function HeroSection() {
 
             {/* Booking Node */}
             <div 
-              className={`floating-card absolute bottom-20 left-4 transition-all duration-500 ${activeWorkflow === 2 ? 'scale-110 shadow-xl shadow-primary/20' : 'scale-100'}`}
+              className={`floating-card absolute bottom-20 left-4 transition-all duration-500 ${activeWorkflow === 2 ? 'scale-110 shadow-xl shadow-primary/20 rounded-full' : 'scale-100'}`}
             >
               <div className="w-44 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
@@ -208,7 +208,7 @@ export function HeroSection() {
 
             {/* Completed Task Node */}
             <div 
-              className={`floating-card absolute bottom-20 right-8 transition-all duration-500 ${activeWorkflow === 3 ? 'scale-110 shadow-xl shadow-primary/20' : 'scale-100'}`}
+              className={`floating-card absolute bottom-20 right-8 transition-all duration-500 ${activeWorkflow === 3 ? 'scale-110 shadow-xl shadow-primary/20 rounded-full' : 'scale-100'}`}
             >
               <div className="w-44 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
@@ -230,7 +230,7 @@ export function HeroSection() {
             </div>
 
             {/* Stats Counter */}
-            <div className="floating-card absolute bottom-0 left-1/2 -translate-x-1/2 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg px-6 py-3">
+            <div className="floating-card absolute -bottom-8 left-1/2 -translate-x-1/2 bg-card/90 backdrop-blur-xl rounded-xl border border-border shadow-lg px-6 py-3">
               <div className="flex items-center gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-card-foreground">24.8k</div>

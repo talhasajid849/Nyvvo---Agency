@@ -84,14 +84,14 @@ export function HowItWorksSection() {
         {/* Steps */}
         <div className="relative">
           {/* Connection Line - Desktop */}
-          <div className="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20">
+          {/* <div className="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20">
             <div
               className={cn(
                 "absolute inset-0 bg-primary transition-all duration-1500 ease-out origin-left",
                 isInView ? "scale-x-100" : "scale-x-0"
               )}
             />
-          </div>
+          </div> */}
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {steps.map((step, index) => (
