@@ -121,9 +121,9 @@ export function HeroSection() {
               <div className="absolute inset-0 -m-28 border border-primary/10 rounded-full animate-[spin_30s_linear_infinite_reverse]" />
               
               {/* Core hub */}
-              <div className="floating-card relative w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-2xl shadow-primary/30 flex items-center justify-center">
+              <div className="floating-card relative w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-full shadow-2xl shadow-primary/30 flex items-center justify-center">
                 <Bot className="w-10 h-10 text-primary-foreground" />
-                <div className="absolute inset-0 rounded-2xl bg-primary/50 animate-ping" />
+                <div className=" absolute inset-0 rounded-full bg-primary/50 animate-ping" />
               </div>
             </div>
 

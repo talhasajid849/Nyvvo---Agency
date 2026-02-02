@@ -21,21 +21,21 @@ const features = [
     title: "Workflow Automation",
     description: "Custom automation flows that connect your tools and eliminate repetitive manual tasks.",
   },
-  {
-    icon: Calendar,
-    title: "Booking Systems",
-    description: "Automated scheduling that syncs with your calendar and sends confirmations.",
-  },
-  {
-    icon: Phone,
-    title: "Outbound Campaigns",
-    description: "AI-powered calling campaigns for follow-ups, reminders, and lead nurturing.",
-  },
-  {
-    icon: Sparkles,
-    title: "Custom AI Solutions",
-    description: "Tailored AI systems designed specifically for your unique business processes.",
-  },
+  // {
+  //   icon: Calendar,
+  //   title: "Booking Systems",
+  //   description: "Automated scheduling that syncs with your calendar and sends confirmations.",
+  // },
+  // {
+  //   icon: Phone,
+  //   title: "Outbound Campaigns",
+  //   description: "AI-powered calling campaigns for follow-ups, reminders, and lead nurturing.",
+  // },
+  // {
+  //   icon: Sparkles,
+  //   title: "Custom AI Solutions",
+  //   description: "Tailored AI systems designed specifically for your unique business processes.",
+  // },
 ]
 
 export function SolutionSection() {
