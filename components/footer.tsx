@@ -2,12 +2,13 @@
 
 import Link from "next/link"
 import { Bot } from "lucide-react"
+import Image from "next/image"
 
 const footerLinks = {
   product: [
     { label: "Features", href: "#services" },
     { label: "Integrations", href: "#integrations" },
-    { label: "Pricing", href: "#pricing" },
+    // { label: "Pricing", href: "#pricing" },
     { label: "Changelog", href: "#" },
   ],
   company: [
@@ -74,7 +75,7 @@ export function Footer() {
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <Bot className="w-5 h-5 text-primary-foreground" />
+                <Image src={"/favIcon.svg"} alt="Nyvvo" width={50} height={50}/>
               </div>
               <span className="text-xl font-bold text-card-foreground">Nyvvo</span>
             </Link>
@@ -170,7 +171,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <span className="text-sm text-muted-foreground">
-              Made with AI, for AI-powered businesses
+              Made with &#10084;&#65039;, by Talha Sajid.
             </span>
           </div>
         </div>

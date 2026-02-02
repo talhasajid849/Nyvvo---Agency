@@ -27,7 +27,7 @@ export default function Home() {
         <IntegrationsSection />
         <BenefitsSection />
         <TestimonialsSection />
-        <PricingSection />
+        {/* <PricingSection /> */}
         <FAQSection />
         <CTASection />
         <ContactSection />

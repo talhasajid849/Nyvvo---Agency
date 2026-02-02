@@ -107,7 +107,7 @@ export function HeroSection() {
                     </div>
                   ))}
                 </div>
-                <span>500+ businesses automated</span>
+                <span>50+ businesses automated</span>
               </div>
             </div>
           </div>

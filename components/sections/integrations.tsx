@@ -3,25 +3,9 @@
 import { useRef } from "react"
 import { useInView } from "@/hooks/use-in-view"
 import { cn } from "@/lib/utils"
+import { integrationsData } from "@/data"
+import Image from "next/image"
 
-const integrations = [
-  { name: "OpenAI", category: "AI" },
-  { name: "n8n", category: "Automation" },
-  { name: "WhatsApp", category: "Communication" },
-  { name: "Stripe", category: "Payments" },
-  { name: "Google Calendar", category: "Scheduling" },
-  { name: "Slack", category: "Communication" },
-  { name: "HubSpot", category: "CRM" },
-  { name: "Salesforce", category: "CRM" },
-  { name: "Zapier", category: "Automation" },
-  { name: "Twilio", category: "Communication" },
-  { name: "Make", category: "Automation" },
-  { name: "Notion", category: "Productivity" },
-  { name: "Airtable", category: "Database" },
-  { name: "Calendly", category: "Scheduling" },
-  { name: "Zendesk", category: "Support" },
-  { name: "Intercom", category: "Support" },
-]
 
 export function IntegrationsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -61,20 +45,26 @@ export function IntegrationsSection() {
 
         {/* Integration Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-          {integrations.map((integration, index) => (
+          {integrationsData.map((integration, index) => (
             <div
               key={integration.name}
               className={cn(
-                "group relative p-4 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center gap-2 text-center",
+                "group relative p-4 rounded-xl bg-card border border-border hover:border-primary/50 shadow-primary/50 hover:shadow-[0_0_10px_rgba(0,0,0,0.08)] cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-2 text-center",
                 isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"
               )}
               style={{ transitionDelay: `${(index % 8) * 50}ms` }}
             >
-              {/* Icon Placeholder */}
-              <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center group-hover:bg-primary/10 transition-colors">
-                <span className="text-lg font-bold text-muted-foreground group-hover:text-primary transition-colors">
-                  {integration.name.charAt(0)}
-                </span>
+              {/* Logo */}
+              <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center group-hover:shadow-md group-hover:bg-primary/10 transition-colors">
+                <Image
+                  src={integration.logo}
+                  alt={`${integration.name} logo`}
+                  width={22}
+                  height={22}
+                  className={cn(
+                    "transition ",
+                  )}
+                />
               </div>
               <span className="text-xs font-medium text-card-foreground">
                 {integration.name}

@@ -123,12 +123,12 @@ export function TestimonialsSection() {
         >
           <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
             <div>
-              <div className="text-3xl font-bold text-foreground">500+</div>
+              <div className="text-3xl font-bold text-foreground">50+</div>
               <div className="text-sm text-muted-foreground">Businesses Automated</div>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div>
-              <div className="text-3xl font-bold text-foreground">2M+</div>
+              <div className="text-3xl font-bold text-foreground">2k+</div>
               <div className="text-sm text-muted-foreground">Calls Handled Monthly</div>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />

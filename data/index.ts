@@ -1,0 +1,18 @@
+export const integrationsData = [
+  { name: "OpenAI", category: "AI", logo: "/integrations/openai.svg" },
+  { name: "n8n", category: "Automation", logo: "/integrations/n8n.svg" },
+  { name: "WhatsApp", category: "Communication", logo: "/integrations/whatsapp.svg" },
+  { name: "Stripe", category: "Payments", logo: "/integrations/stripe.svg" },
+  { name: "Google Calendar", category: "Scheduling", logo: "/integrations/googlecalendar.svg" },
+  { name: "Slack", category: "Communication", logo: "/integrations/slack.svg" },
+  { name: "HubSpot", category: "CRM", logo: "/integrations/hubspot.svg" },
+  { name: "Salesforce", category: "CRM", logo: "/integrations/salesforce.svg" },
+  { name: "Zapier", category: "Automation", logo: "/integrations/zapier.svg" },
+  { name: "Twilio", category: "Communication", logo: "/integrations/twilio.svg" },
+  { name: "Make", category: "Automation", logo: "/integrations/make.svg" },
+  { name: "Notion", category: "Productivity", logo: "/integrations/notion.svg" },
+  { name: "Airtable", category: "Database", logo: "/integrations/airtable.svg" },
+  { name: "Calendly", category: "Scheduling", logo: "/integrations/calendly.svg" },
+  { name: "Zendesk", category: "Support", logo: "/integrations/zendesk.svg" },
+  { name: "Intercom", category: "Support", logo: "/integrations/intercom.svg" },
+]

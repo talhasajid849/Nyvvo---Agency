@@ -11,7 +11,7 @@ const navItems = [
   { label: "Services", href: "#services" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Integrations", href: "#integrations" },
-  { label: "Pricing", href: "#pricing" },
+  // { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ]
 
@@ -43,8 +43,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative w-8 h-8 rounded-lg bg-primary flex items-center justify-center overflow-hidden">
-              <span className="text-primary-foreground font-bold text-lg">N</span>
+            <div className="relative w-8 h-9 bg-transparent flex items-center justify-center overflow-hidden">
+              <img src={"/favIcon.svg"} className="" />
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <span className="text-xl font-bold text-foreground">Nyvvo</span>

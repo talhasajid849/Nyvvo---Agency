@@ -49,8 +49,8 @@ export function CTASection() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           )}
         >
-          Book a free 30-minute strategy call. We{"'"}ll analyze your processes,
-          identify automation opportunities, and show you exactly how Nyvvo can
+          Book a free 30-minute strategy Meet. We{"'"}ll analyze your processes,
+          identify automation opportunities, and show you exactly how <strong>Nyvvo</strong> can
           transform your operations.
         </p>
 
@@ -66,7 +66,7 @@ export function CTASection() {
             className="rounded-full px-8 bg-white text-primary hover:bg-white/90 group"
           >
             <Link href="#contact">
-              Book Your Free Demo
+              Book Your Meeting
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
@@ -76,15 +76,15 @@ export function CTASection() {
             asChild
             className="rounded-full px-8 border-white/30 text-white hover:bg-white/10 group bg-transparent"
           >
-            <Link href="tel:+1234567890">
+            {/* <Link href="tel:+1234567890">
               <PhoneCall className="mr-2 w-4 h-4" />
               Call Us Now
-            </Link>
+            </Link> */}
           </Button>
         </div>
 
         {/* Trust Badge */}
-        <div
+        {/* <div
           className={cn(
             "mt-12 flex items-center justify-center gap-6 text-white/60 text-sm transition-all duration-700 delay-400",
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -95,7 +95,7 @@ export function CTASection() {
           <span>14-day free trial</span>
           <span className="w-1 h-1 rounded-full bg-white/40" />
           <span>Cancel anytime</span>
-        </div>
+        </div> */}
       </div>
     </section>
   )

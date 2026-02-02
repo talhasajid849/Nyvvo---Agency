@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" fill="none">
+
+  <!-- Rounded square background -->
+  <rect width="64" height="64" rx="18" fill="#2F80FF"/>
+
+  <!-- Modern rounded N (stroke for soft corners) -->
+  <path
+    d="M20 44 V20 L44 44 V20"
+    stroke="#FFFFFF"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+</svg>

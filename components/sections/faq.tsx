@@ -37,11 +37,6 @@ const faqs = [
       "All plans include email support with responses within 24 hours. Professional plans get priority support with faster response times. Enterprise clients receive a dedicated account manager and 24/7 phone support with guaranteed SLAs.",
   },
   {
-    question: "Can I try Nyvvo before committing?",
-    answer:
-      "Absolutely! We offer a 14-day free trial on all plans so you can experience the power of AI automation risk-free. We also have a 30-day money-back guarantee if you're not completely satisfied.",
-  },
-  {
     question: "How does billing work?",
     answer:
       "We offer monthly and annual billing options. Annual plans come with a 20% discount. You can upgrade, downgrade, or cancel your plan at any time. There are no hidden fees or long-term contracts required.",
