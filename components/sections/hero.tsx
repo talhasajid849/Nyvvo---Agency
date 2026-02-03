@@ -77,7 +77,7 @@ export function HeroSection() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-200">
               <Button size="lg" asChild className="rounded-full px-8 group">
                 <Link href="#demo">
-                  Book a Demo
+                  Book Call
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

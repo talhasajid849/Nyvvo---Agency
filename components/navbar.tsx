@@ -93,7 +93,7 @@ export function Navbar() {
               <Link href="#contact">Contact</Link>
             </Button>
             <Button asChild className="rounded-full px-6">
-              <Link href="#demo">Book a Demo</Link>
+              <Link href="#demo">Book Call</Link>
             </Button>
           </div>
 
@@ -152,7 +152,7 @@ export function Navbar() {
                 <Link href="#contact">Contact</Link>
               </Button>
               <Button asChild className="rounded-full">
-                <Link href="#demo">Book a Demo</Link>
+                <Link href="#demo">Book Call</Link>
               </Button>
             </div>
           </div>
