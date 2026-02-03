@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, Shield, Zap, Bot, Phone, MessageSquare, Calendar, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
+import { CalendlyPopupButton } from "../ui/calendly-popup-button"
 
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -75,12 +76,10 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-200">
-              <Button size="lg" asChild className="rounded-full px-8 group">
-                <Link href="#demo">
+              <CalendlyPopupButton className="rounded-full px-8 group">
                   Book Call
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+              </CalendlyPopupButton>
               <Button
                 size="lg"
                 variant="outline"

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, PhoneCall } from "lucide-react"
 import Link from "next/link"
+import { CalendlyPopupButton } from "../ui/calendly-popup-button"
 
 export function CTASection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -60,16 +61,12 @@ export function CTASection() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           )}
         >
-          <Button
-            size="lg"
-            asChild
+          <CalendlyPopupButton
             className="rounded-full px-8 bg-white text-primary hover:bg-white/90 group"
           >
-            <Link href="#contact">
               Book Your Meeting
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
+          </CalendlyPopupButton>
           <Button
             size="lg"
             variant="outline"

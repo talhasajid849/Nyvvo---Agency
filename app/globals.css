@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: oklch(0.99 0 0);
   --foreground: oklch(0.18 0.02 255);
@@ -187,4 +191,15 @@
   50% {
     transform: translateY(-10px);
   }
+}
+
+/* Calendly popup rounded corners */
+.calendly-overlay .calendly-popup {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+
+/* optional: nicer shadow */
+.calendly-overlay {
+  backdrop-filter: blur(8px);
 }

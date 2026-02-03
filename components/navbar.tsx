@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CalendlyPopupButton } from "./ui/calendly-popup-button";
 
 const navItems = [
   { label: "Services", href: "#services" },
@@ -92,9 +93,9 @@ export function Navbar() {
             <Button variant="ghost" asChild>
               <Link href="#contact">Contact</Link>
             </Button>
-            <Button asChild className="rounded-full px-6">
-              <Link href="#demo">Book Call</Link>
-            </Button>
+            <CalendlyPopupButton className="rounded-full px-6">
+              Book Call
+            </CalendlyPopupButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -151,9 +152,9 @@ export function Navbar() {
               <Button variant="ghost" asChild className="justify-start">
                 <Link href="#contact">Contact</Link>
               </Button>
-              <Button asChild className="rounded-full">
-                <Link href="#demo">Book Call</Link>
-              </Button>
+              <CalendlyPopupButton className="rounded-full">
+                Book Call
+              </CalendlyPopupButton>
             </div>
           </div>
         </div>
