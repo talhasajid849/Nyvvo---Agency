@@ -11,6 +11,12 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react"
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void
+  }
+}
+
 export function ContactSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { threshold: 0.1 })
@@ -22,6 +28,7 @@ export function ContactSection() {
     setIsSubmitting(true)
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500))
+    window.fbq?.("track", "Contact")
     setIsSubmitting(false)
     setIsSubmitted(true)
   }

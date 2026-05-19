@@ -8,6 +8,7 @@ declare global {
     Calendly?: {
       initPopupWidget: (opts: { url: string }) => void;
     };
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -25,6 +26,9 @@ export function CalendlyPopupButton({
   variant?: Variant;
 }) {
   const openCalendly = () => {
+    window.fbq?.("track", "Lead", {
+      content_name: "Calendly booking opened",
+    });
     if (!window.Calendly?.initPopupWidget) return;
     window.Calendly.initPopupWidget({ url });
   };

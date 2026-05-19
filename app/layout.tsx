@@ -2,11 +2,13 @@ import React from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import "./globals.css";
+import "../styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Script from "next/script";
+import { MetaPixel } from "@/components/meta-pixel";
 
 const _inter = Inter({ subsets: ["latin"] });
+const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "939106139167358";
 
 export const metadata: Metadata = {
   title: "Nyvvo | AI Automation Agency - Secure. Smart. Automated.",
@@ -96,6 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
+        <MetaPixel pixelId={metaPixelId} />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
