@@ -4,17 +4,17 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #020D24;
+  --background: #010714;
   --foreground: oklch(0.97 0.005 255);
-  --card: #041B42;
+  --card: #02112B;
   --card-foreground: oklch(0.97 0.005 255);
-  --popover: #041B42;
+  --popover: #02112B;
   --popover-foreground: oklch(0.97 0.005 255);
   --primary: #2F80FF;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #062454;
+  --secondary: #031936;
   --secondary-foreground: oklch(0.97 0.005 255);
-  --muted: #031633;
+  --muted: #020D22;
   --muted-foreground: #A8BCE0;
   --accent: #2F80FF;
   --accent-foreground: oklch(1 0 0);
@@ -29,28 +29,28 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  --sidebar: #041B42;
+  --sidebar: #02112B;
   --sidebar-foreground: oklch(0.97 0.005 255);
   --sidebar-primary: #2F80FF;
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: #062454;
+  --sidebar-accent: #031936;
   --sidebar-accent-foreground: oklch(0.97 0.005 255);
   --sidebar-border: #5A9AFF66;
   --sidebar-ring: #2F80FF;
 }
 
 .dark {
-  --background: #020D24;
+  --background: #010714;
   --foreground: oklch(0.97 0.005 255);
-  --card: #041B42;
+  --card: #02112B;
   --card-foreground: oklch(0.97 0.005 255);
-  --popover: #041B42;
+  --popover: #02112B;
   --popover-foreground: oklch(0.97 0.005 255);
   --primary: #2F80FF;
   --primary-foreground: oklch(1 0 0);
-  --secondary: #062454;
+  --secondary: #031936;
   --secondary-foreground: oklch(0.97 0.005 255);
-  --muted: #031633;
+  --muted: #020D22;
   --muted-foreground: #A8BCE0;
   --accent: #2F80FF;
   --accent-foreground: oklch(1 0 0);
@@ -64,11 +64,11 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: #041B42;
+  --sidebar: #02112B;
   --sidebar-foreground: oklch(0.97 0.005 255);
   --sidebar-primary: #2F80FF;
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: #062454;
+  --sidebar-accent: #031936;
   --sidebar-accent-foreground: oklch(0.97 0.005 255);
   --sidebar-border: #5A9AFF66;
   --sidebar-ring: #2F80FF;
@@ -122,9 +122,9 @@
   body {
     @apply bg-background text-foreground;
     background:
-      radial-gradient(circle at 22% 18%, rgba(47, 128, 255, 0.13), transparent 34rem),
-      radial-gradient(circle at 78% 34%, rgba(99, 167, 255, 0.08), transparent 30rem),
-      linear-gradient(135deg, #010612 0%, #020d24 52%, #041b42 100%);
+      radial-gradient(circle at 22% 18%, rgba(47, 128, 255, 0.08), transparent 34rem),
+      radial-gradient(circle at 78% 34%, rgba(99, 167, 255, 0.05), transparent 30rem),
+      linear-gradient(135deg, #00030a 0%, #010714 55%, #02112b 100%);
     background-attachment: fixed;
   }
 }
